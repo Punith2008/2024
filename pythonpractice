@@ -1,4 +1,5 @@
 >>D={}# empty dictionary
+#
 >>ditc={key1:value,key2:value,key3:value,key4:value}#syntax
 >>#example
 >>Marks={"English":95,"Accountancy":100,"Applied_Mathematics":99,"Economics":98,"Bussiness_Studies":98}
