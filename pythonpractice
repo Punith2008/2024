@@ -1,0 +1,48 @@
+>>D={}# empty dictionary
+>>ditc={key1:value,key2:value,key3:value,key4:value}#syntax
+>>#example
+>>Marks={"English":95,"Accountancy":100,"Applied_Mathematics":99,"Economics":98,"Bussiness_Studies":98}
+>>#Accessing a key(syntax)
+>>dictionary[Key]
+>>Marks["Economics"]
+>>Marks.keys()#access all keys in one go
+>>Marks.values()#access all values in one go
+
+Marks={"physics":98,"chemistry":97,"maths":96,"csc":100}
+for i in Marks:
+    print(i,":",Marks[i])
+Marks['maths']=100
+Marks['english']=99
+Marks.pop('english')
+print(Marks)
+'physics'in Marks
+'csc'not in Marks
+print(len(Marks))
+print(Marks.get('csc'))
+print(min(Marks.values()))
+print(max(Marks.values()))
+print(sum(Marks.values()))
+
+s1={"Name":"Vivan", "Age":14, "Com":50, "Sci":45 ,"Eng":49}
+print(s1.keys())
+print(s1.values())
+s1['Year']=2020
+s1['Com']=44
+print(49 in s1.values())
+print(s1)
+for i in s1:
+    print(i,s1[i])
+
+#Creating a dictionary
+Quiz={"Team_A":98,"Team_B":99,"Team_C":87,"Team_d":134}
+for i in Quiz:
+    if Quiz[i]<100:
+        print(i,Quiz[i])
+Highest=max(Quiz)       
+print(Highest)        
+team = input("Enter a Team:")
+if team in Quiz:
+    print(team," exists")
+else:
+    print(team," not exists")
+
