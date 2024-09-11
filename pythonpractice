@@ -47,3 +47,35 @@ if team in Quiz:
 else:
     print(team," not exists")
 
+# Set-1 Q1. WAP to create a tuple
+Marks=(88,95,80,68,87)
+Mcheck=input("Enter the marks you want to check : ")
+#Find sum and average of the tuple
+s=sum(Marks)
+avg=int(s)/len(Marks)
+print("The sum of the tuple is : ",s)
+print("The average of the tuple is : ",avg)
+#Accept input about marks and check whether it exists or not
+if int(Mcheck) in Marks:
+  print(Mcheck," is present in the tuple")
+else:
+  print(Mcheck," is not present in the tuple")
+
+# Set-1 Q2. Create a list
+L1=[1,2,3,4,5,6]
+# Finding the Maximum and Minimum values of the list
+print(max(L1))
+print(min(L1))
+# Accepting an input from the user to insert
+Index=int(input("Enter the index number : "))
+Value=int(input("Enter the value to be inserted : "))
+L1.insert(Index,Value)
+print(L1)
+#Accepting an input from the user to remove
+Element_To_Remove=int(input("Enter the element to be removed : "))
+if Element_To_Remove in L1:
+  L1.remove(Element_To_Remove)
+  print(L1)
+else:
+  print(Element_To_Remove," is not present in the list")
+
