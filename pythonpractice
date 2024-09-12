@@ -79,3 +79,38 @@ if Element_To_Remove in L1:
 else:
   print(Element_To_Remove," is not present in the list")
 
+#Set-2 Q1.
+#Menu Driven program
+while True:
+  print("Menu:")
+  print("1.Create a list ")
+  print("2.exit")
+  choice=int(input("Enter your choice:"))
+  if choice == 1:
+    List=[]
+    for i in range(6):
+      List.append(input("Enter value{i+1}: "))
+      print("Your list",List)
+      break
+  elif choice == 2:
+    print("Exiting the program")
+    break
+  else:
+    print("Invalid choice. Please try again")
+
+#Set-2 Q2.
+#WAP to create a dictionary of a report
+Report={"Name":"Keshav","Age":15,"Sci":71,"Phy":67,"Chem":65,"Eng":68}
+print(Report)
+#Adding a new value
+Report["Year"]=2023
+print(Report)
+if 58 in Report.values():
+    print("Yes")
+else:
+    print("No")
+print(Report)
+#Displaying each key and values using for loop
+for key,value in Report.items():
+    print(key,value)
+
