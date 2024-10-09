@@ -114,3 +114,235 @@ print(Report)
 for key,value in Report.items():
     print(key,value)
 
+## HEALTH CHATBOT SOURCE CODE
+elif chosen_illness == "Food Poisoning":
+numday9 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+percent9 = [2, 20, 38, 35, 5, 0, 0, 0, 0, 0]
+ax = plt.axes()
+ax.set_facecolor("black")
+plt.bar(numday9, percent9)
+plt.xlabel("Number of days symptoms lasted")
+plt.ylabel("Odds of complete relief")
+plt.title("Food Poisoning")
+plt.show()
+plt.bar("Spring", 23, color="y")
+plt.bar("Summer", 54, color="r")
+plt.bar("Monsoon", 17, color="r")
+plt.bar("Winter", 6, color="g")
+plt.xlabel("Seasons")
+plt.ylabel("Occurrences")
+plt.title("Which season Food Poisoning occurs the most")
+plt.show()
+print(
+"\nPlease not Food poisoning is caused by leaving food in
+temperatures between 40F to "
+"140F before eating the food, it can also be caused in the
+monsoon due to unhygienic conditions")
+print("\nHome Remedies - Food poisoning - ORS, electrolyte
+solutions")
+elif chosen_illness == "Sinusitis":
+print("Sinusitis can either be a acute or a chronic disease. "
+"\n If it is a chronic disease it is likely to go away within 10
+to 12 weeks. "
+"\n However, if it is a acute disease it is likely to get cured
+within a week to 10 days. ")
+print("\nSinusitis, occurs mainly in the season of allergies, "
+"which differs from person to person hence cannot be
+determined in which season it occurs the most")
+print("\nHome Remedies - Sinusitis - saline nasal rinse, steam
+inhalation")
+else:
+print("Due to some issues we couldn't predict illness. "
+"Please consult a healthcare professional for a proper
+diagnosis.")
+
+plt.bar("Spring", 15, color="y")
+plt.bar("Summer", 4, color="g")
+plt.bar("Monsoon", 36, color="r")
+plt.bar("Winter", 45, color="r")
+plt.xlabel("Seasons")
+plt.ylabel("Occurrences")
+plt.title("Which season influenza occurs the most")
+plt.show()
+print("\nAlso note The flu is caused by an influenza
+virus")
+print("\nHome Remedies - Influenza - saltwater
+gargling")
+elif chosen_illness == "Allergies":
+print("Allergies occur when your immune system reacts
+to a foreign substance"
+" — such as pollen, bee venom or "
+"pet dander — or a food that doesn't cause a
+reaction in most people")
+print("\nHome Remedies - Allergies - saline nasal
+rinse")
+elif chosen_illness == "Stomach Flu":
+numday4 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+percent4 = [10, 39, 45, 3, 2, 1, 0, 0, 0, 0]
+ax = plt.axes()
+ax.set_facecolor("black")
+plt.bar(numday4, percent4)
+plt.xlabel("Number of days symptoms lasted")
+plt.ylabel("Odds of complete relief")
+plt.title("Stomach Flu")
+plt.show()
+plt.bar("Spring", 9, color="g")
+plt.bar("Summer", 6, color="g")
+plt.bar("Monsoon", 40, color="r")
+plt.bar("Winter", 45, color="r")
+plt.xlabel("Seasons")
+plt.ylabel("Occurrences")
+plt.title("Which season Stomach Flu occurs the most")
+plt.show()
+print(
+"\n Stomach Flu usually caused by a bacterial or viral tummy
+bug. It affects people of all ages,"
+" but is particularly common in young children")
+print("\nHome Remedies - Stomach flu- consume ors,ginger tea
+or diluted fruit juice")
+elif chosen_illness == "Migraine":
+numday5 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+percent5 = [10, 39, 45, 3, 2, 1, 0, 0, 0, 0]
+ax = plt.axes()
+ax.set_facecolor("black")
+plt.bar(numday5, percent5)
+plt.xlabel("Number of days symptoms lasted")
+plt.ylabel("Odds of complete relief")
+plt.title("Migraine")
+plt.show()
+plt.bar("Spring", 40, color="r")
+plt.bar("Summer", 45, color="r")
+plt.bar("Monsoon", 5, color="g")
+plt.bar("Winter", 10, color="g")
+plt.xlabel("Seasons")
+plt.ylabel("Occurrences")
+plt.title("Which season Migraine occurs the most")
+plt.show()
+print(
+"\nMigraine has a few known triggers that include certain
+medications, drinking alcohol, especially "
+"red wine, drinking too much caffeine, stress")
+print("\nHome Remedies - Migraine - cold compress for head
+and neck")
+elif chosen_illness == "Bronchitis":
+numday6 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+percent6 = [10, 23, 29, 28, 10, 0, 0, 0, 0, 0]
+ax = plt.axes()
+ax.set_facecolor("black")
+plt.bar(numday6, percent6)
+plt.xlabel("Number of weeks symptoms lasted")
+plt.ylabel("Odds of complete relief")
+plt.title("Bronchitis")
+plt.show()
+
+      plt.bar("Spring", 10, color="g")
+plt.bar("Summer", 8, color="g")
+plt.bar("Monsoon", 32, color="y")
+plt.bar("Winter", 50, color="r")
+plt.xlabel("Seasons")
+plt.ylabel("Occurrences")
+plt.title("Which season Bronchitis occurs the most")
+plt.show()
+print("\nAlso note Bronchitis can be caused due to influenza ")
+print("\nHome Remedies - Bronchitis - fluids, steam inhalation
+and rest")
+elif chosen_illness == "Hypertension":
+numday7 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+percent7 = [2, 10, 38, 40, 10, 0, 0, 0, 0, 0]
+ax = plt.axes()
+ax.set_facecolor("black")
+plt.bar(numday7, percent7)
+plt.xlabel("Number of weeks symptoms lasted")
+plt.ylabel("Odds of complete relief")
+plt.title("Hypertension")
+plt.show()
+plt.bar("Spring", 7, color="g")
+plt.bar("Summer", 3, color="g")
+plt.bar("Monsoon", 40, color="r")
+plt.bar("Winter", 50, color="r")
+plt.xlabel("Seasons")
+plt.ylabel("Occurrences")
+plt.title("Which season Hypertension occurs the most")
+plt.show()
+print("\nAlso note that Hypertension to be cured "
+"requires a change in lifestyle [diet, exercise etc] and not
+only medicines")
+print("\nHome Remedies - Hypertension - meditation")
+elif chosen_illness == "Asthma":
+numday8 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+percent8 = [2, 10, 38, 40, 10, 0, 0, 0, 0, 0]
+ax = plt.axes()
+ax.set_facecolor("black")
+plt.bar(numday8, percent8)
+plt.xlabel("Number of weeks symptoms lasted")
+plt.ylabel("Odds of complete relief")
+plt.title("Asthma")
+plt.show()
+plt.bar("Spring", 7, color="g")
+plt.bar("Summer", 4, color="g")
+plt.bar("Monsoon", 44, color="r")
+plt.bar("Winter", 45, color="r")
+plt.xlabel("Seasons")
+plt.ylabel("Occurrences")
+plt.title("Which season Asthma occurs the most")
+plt.show()
+print("\nPlease not asthma is also caused by some seasonal
+allergies and not only due to the weather")
+print("\nHome Remedies - Asthma - using air purifier at home,
+breathing exercises")
+
+elif chosen_illness == "Food Poisoning":
+numday9 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+percent9 = [2, 20, 38, 35, 5, 0, 0, 0, 0, 0]
+ax = plt.axes()
+ax.set_facecolor("black")
+plt.bar(numday9, percent9)
+plt.xlabel("Number of days symptoms lasted")
+plt.ylabel("Odds of complete relief")
+plt.title("Food Poisoning")
+plt.show()
+plt.bar("Spring", 23, color="y")
+plt.bar("Summer", 54, color="r")
+plt.bar("Monsoon", 17, color="r")
+plt.bar("Winter", 6, color="g")
+plt.xlabel("Seasons")
+plt.ylabel("Occurrences")
+plt.title("Which season Food Poisoning occurs the most")
+plt.show()
+print(
+"\nPlease not Food poisoning is caused by leaving food in
+temperatures between 40F to "
+"140F before eating the food, it can also be caused in the
+monsoon due to unhygienic conditions")
+print("\nHome Remedies - Food poisoning - ORS, electrolyte
+solutions")
+elif chosen_illness == "Sinusitis":
+print("Sinusitis can either be a acute or a chronic disease. "
+"\n If it is a chronic disease it is likely to go away within 10
+to 12 weeks. "
+"\n However, if it is a acute disease it is likely to get cured
+within a week to 10 days. ")
+print("\nSinusitis, occurs mainly in the season of allergies, "
+"which differs from person to person hence cannot be
+determined in which season it occurs the most")
+print("\nHome Remedies - Sinusitis - saline nasal rinse, steam
+inhalation")
+else:
+print("Due to some issues we couldn't predict illness. "
+"Please consult a healthcare professional for a proper
+diagnosis.")
+
+##MATPLOTLIB PRACTICE
+import matplotlib.pyplot as plt
+plt.plot([30,50,67]),([15,46,50])
+plt.title("MY GRAPH")
+plt.xlabel("X AXIS")
+plt.ylabel("Y AXIS")
+plt.show()
+plt.plot([1,2,3,4],[1,4,9,14])
+plt.title("MY GRAPH")
+plt.xlabel("X AXIS")
+plt.ylabel("Y AXIS")
+plt.show()
+
+plt.show()
