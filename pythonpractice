@@ -1,348 +1,57 @@
->>D={}# empty dictionary
-#
->>ditc={key1:value,key2:value,key3:value,key4:value}#syntax
->>#example
->>Marks={"English":95,"Accountancy":100,"Applied_Mathematics":99,"Economics":98,"Bussiness_Studies":98}
->>#Accessing a key(syntax)
->>dictionary[Key]
->>Marks["Economics"]
->>Marks.keys()#access all keys in one go
->>Marks.values()#access all values in one go
+a=int(input("Enter first number:"))
+b=int(input("Enter second number:"))
+print("Before interchanging")
+print("The value of a=",a)
+print("The value of b=",b)
+temp=a
+a=b
+b=temp
+print("after interchanging")
+print("value of a=",a)
+print("Value of b=",b)
 
-Marks={"physics":98,"chemistry":97,"maths":96,"csc":100}
-for i in Marks:
-    print(i,":",Marks[i])
-Marks['maths']=100
-Marks['english']=99
-Marks.pop('english')
-print(Marks)
-'physics'in Marks
-'csc'not in Marks
-print(len(Marks))
-print(Marks.get('csc'))
-print(min(Marks.values()))
-print(max(Marks.values()))
-print(sum(Marks.values()))
+a=int(input("Enter first number:"))
+b=int(input("Enter second number:"))
+s=a+b
+d=a-b
+p=a*b
+q=a/b
+r=a%b
+print("printing the result of all arithematic operations")
+print("addition",s)
+print("Subtraction",d)
+print("multiplicaton",p)
+print("division",q)
+print("modulus",r)
 
-s1={"Name":"Vivan", "Age":14, "Com":50, "Sci":45 ,"Eng":49}
-print(s1.keys())
-print(s1.values())
-s1['Year']=2020
-s1['Com']=44
-print(49 in s1.values())
-print(s1)
-for i in s1:
-    print(i,s1[i])
+l=float(input("Enter length:"))
+b=float(input("Enter breadth:"))
+perimeter=2*(l+b)
+area=l*b
+print("The perimeter of the rectangle is :",perimeter)
+print("The area of the rectangle is :",area)
 
-#Creating a dictionary
-Quiz={"Team_A":98,"Team_B":99,"Team_C":87,"Team_d":134}
-for i in Quiz:
-    if Quiz[i]<100:
-        print(i,Quiz[i])
-Highest=max(Quiz)       
-print(Highest)        
-team = input("Enter a Team:")
-if team in Quiz:
-    print(team," exists")
+p=int(input("Enter principle amount:"))
+t=int(input("Enter time of tenure:"))
+r=int(input("Enter rate of interest:"))
+si=(p*t*r)/100
+payment=p+si
+print("The simple interest of the given principle amount,time of tenure & rate of interest is :",si," and the total amount to be paid is :",payment)
+
+a=int(input("Enter first number:"))
+b=int(input("Enter second number:"))
+c=int(input("Enter third number:"))
+Maxval=max(a,b,c)
+Minval=min(a,b,c)
+print("The maximum value of the given three values is ",Maxval)
+print("The minimum value of the given three values is ",Minval)
+
+name=str(input("Enter your name:"))
+age=int(input("Enter the age:"))
+print("Name:",name)
+if age>=18:
+  print("eligible for driving license")
 else:
-    print(team," not exists")
+  print("underage for drving license")
 
-# Set-1 Q1. WAP to create a tuple
-Marks=(88,95,80,68,87)
-Mcheck=input("Enter the marks you want to check : ")
-#Find sum and average of the tuple
-s=sum(Marks)
-avg=int(s)/len(Marks)
-print("The sum of the tuple is : ",s)
-print("The average of the tuple is : ",avg)
-#Accept input about marks and check whether it exists or not
-if int(Mcheck) in Marks:
-  print(Mcheck," is present in the tuple")
-else:
-  print(Mcheck," is not present in the tuple")
-
-# Set-1 Q2. Create a list
-L1=[1,2,3,4,5,6]
-# Finding the Maximum and Minimum values of the list
-print(max(L1))
-print(min(L1))
-# Accepting an input from the user to insert
-Index=int(input("Enter the index number : "))
-Value=int(input("Enter the value to be inserted : "))
-L1.insert(Index,Value)
-print(L1)
-#Accepting an input from the user to remove
-Element_To_Remove=int(input("Enter the element to be removed : "))
-if Element_To_Remove in L1:
-  L1.remove(Element_To_Remove)
-  print(L1)
-else:
-  print(Element_To_Remove," is not present in the list")
-
-#Set-2 Q1.
-#Menu Driven program
-while True:
-  print("Menu:")
-  print("1.Create a list ")
-  print("2.exit")
-  choice=int(input("Enter your choice:"))
-  if choice == 1:
-    List=[]
-    for i in range(6):
-      List.append(input("Enter value{i+1}: "))
-      print("Your list",List)
-      break
-  elif choice == 2:
-    print("Exiting the program")
-    break
-  else:
-    print("Invalid choice. Please try again")
-
-#Set-2 Q2.
-#WAP to create a dictionary of a report
-Report={"Name":"Keshav","Age":15,"Sci":71,"Phy":67,"Chem":65,"Eng":68}
-print(Report)
-#Adding a new value
-Report["Year"]=2023
-print(Report)
-if 58 in Report.values():
-    print("Yes")
-else:
-    print("No")
-print(Report)
-#Displaying each key and values using for loop
-for key,value in Report.items():
-    print(key,value)
-
-## HEALTH CHATBOT SOURCE CODE
-elif chosen_illness == "Food Poisoning":
-numday9 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-percent9 = [2, 20, 38, 35, 5, 0, 0, 0, 0, 0]
-ax = plt.axes()
-ax.set_facecolor("black")
-plt.bar(numday9, percent9)
-plt.xlabel("Number of days symptoms lasted")
-plt.ylabel("Odds of complete relief")
-plt.title("Food Poisoning")
-plt.show()
-plt.bar("Spring", 23, color="y")
-plt.bar("Summer", 54, color="r")
-plt.bar("Monsoon", 17, color="r")
-plt.bar("Winter", 6, color="g")
-plt.xlabel("Seasons")
-plt.ylabel("Occurrences")
-plt.title("Which season Food Poisoning occurs the most")
-plt.show()
-print(
-"\nPlease not Food poisoning is caused by leaving food in
-temperatures between 40F to "
-"140F before eating the food, it can also be caused in the
-monsoon due to unhygienic conditions")
-print("\nHome Remedies - Food poisoning - ORS, electrolyte
-solutions")
-elif chosen_illness == "Sinusitis":
-print("Sinusitis can either be a acute or a chronic disease. "
-"\n If it is a chronic disease it is likely to go away within 10
-to 12 weeks. "
-"\n However, if it is a acute disease it is likely to get cured
-within a week to 10 days. ")
-print("\nSinusitis, occurs mainly in the season of allergies, "
-"which differs from person to person hence cannot be
-determined in which season it occurs the most")
-print("\nHome Remedies - Sinusitis - saline nasal rinse, steam
-inhalation")
-else:
-print("Due to some issues we couldn't predict illness. "
-"Please consult a healthcare professional for a proper
-diagnosis.")
-
-plt.bar("Spring", 15, color="y")
-plt.bar("Summer", 4, color="g")
-plt.bar("Monsoon", 36, color="r")
-plt.bar("Winter", 45, color="r")
-plt.xlabel("Seasons")
-plt.ylabel("Occurrences")
-plt.title("Which season influenza occurs the most")
-plt.show()
-print("\nAlso note The flu is caused by an influenza
-virus")
-print("\nHome Remedies - Influenza - saltwater
-gargling")
-elif chosen_illness == "Allergies":
-print("Allergies occur when your immune system reacts
-to a foreign substance"
-" — such as pollen, bee venom or "
-"pet dander — or a food that doesn't cause a
-reaction in most people")
-print("\nHome Remedies - Allergies - saline nasal
-rinse")
-elif chosen_illness == "Stomach Flu":
-numday4 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-percent4 = [10, 39, 45, 3, 2, 1, 0, 0, 0, 0]
-ax = plt.axes()
-ax.set_facecolor("black")
-plt.bar(numday4, percent4)
-plt.xlabel("Number of days symptoms lasted")
-plt.ylabel("Odds of complete relief")
-plt.title("Stomach Flu")
-plt.show()
-plt.bar("Spring", 9, color="g")
-plt.bar("Summer", 6, color="g")
-plt.bar("Monsoon", 40, color="r")
-plt.bar("Winter", 45, color="r")
-plt.xlabel("Seasons")
-plt.ylabel("Occurrences")
-plt.title("Which season Stomach Flu occurs the most")
-plt.show()
-print(
-"\n Stomach Flu usually caused by a bacterial or viral tummy
-bug. It affects people of all ages,"
-" but is particularly common in young children")
-print("\nHome Remedies - Stomach flu- consume ors,ginger tea
-or diluted fruit juice")
-elif chosen_illness == "Migraine":
-numday5 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-percent5 = [10, 39, 45, 3, 2, 1, 0, 0, 0, 0]
-ax = plt.axes()
-ax.set_facecolor("black")
-plt.bar(numday5, percent5)
-plt.xlabel("Number of days symptoms lasted")
-plt.ylabel("Odds of complete relief")
-plt.title("Migraine")
-plt.show()
-plt.bar("Spring", 40, color="r")
-plt.bar("Summer", 45, color="r")
-plt.bar("Monsoon", 5, color="g")
-plt.bar("Winter", 10, color="g")
-plt.xlabel("Seasons")
-plt.ylabel("Occurrences")
-plt.title("Which season Migraine occurs the most")
-plt.show()
-print(
-"\nMigraine has a few known triggers that include certain
-medications, drinking alcohol, especially "
-"red wine, drinking too much caffeine, stress")
-print("\nHome Remedies - Migraine - cold compress for head
-and neck")
-elif chosen_illness == "Bronchitis":
-numday6 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-percent6 = [10, 23, 29, 28, 10, 0, 0, 0, 0, 0]
-ax = plt.axes()
-ax.set_facecolor("black")
-plt.bar(numday6, percent6)
-plt.xlabel("Number of weeks symptoms lasted")
-plt.ylabel("Odds of complete relief")
-plt.title("Bronchitis")
-plt.show()
-
-      plt.bar("Spring", 10, color="g")
-plt.bar("Summer", 8, color="g")
-plt.bar("Monsoon", 32, color="y")
-plt.bar("Winter", 50, color="r")
-plt.xlabel("Seasons")
-plt.ylabel("Occurrences")
-plt.title("Which season Bronchitis occurs the most")
-plt.show()
-print("\nAlso note Bronchitis can be caused due to influenza ")
-print("\nHome Remedies - Bronchitis - fluids, steam inhalation
-and rest")
-elif chosen_illness == "Hypertension":
-numday7 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-percent7 = [2, 10, 38, 40, 10, 0, 0, 0, 0, 0]
-ax = plt.axes()
-ax.set_facecolor("black")
-plt.bar(numday7, percent7)
-plt.xlabel("Number of weeks symptoms lasted")
-plt.ylabel("Odds of complete relief")
-plt.title("Hypertension")
-plt.show()
-plt.bar("Spring", 7, color="g")
-plt.bar("Summer", 3, color="g")
-plt.bar("Monsoon", 40, color="r")
-plt.bar("Winter", 50, color="r")
-plt.xlabel("Seasons")
-plt.ylabel("Occurrences")
-plt.title("Which season Hypertension occurs the most")
-plt.show()
-print("\nAlso note that Hypertension to be cured "
-"requires a change in lifestyle [diet, exercise etc] and not
-only medicines")
-print("\nHome Remedies - Hypertension - meditation")
-elif chosen_illness == "Asthma":
-numday8 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-percent8 = [2, 10, 38, 40, 10, 0, 0, 0, 0, 0]
-ax = plt.axes()
-ax.set_facecolor("black")
-plt.bar(numday8, percent8)
-plt.xlabel("Number of weeks symptoms lasted")
-plt.ylabel("Odds of complete relief")
-plt.title("Asthma")
-plt.show()
-plt.bar("Spring", 7, color="g")
-plt.bar("Summer", 4, color="g")
-plt.bar("Monsoon", 44, color="r")
-plt.bar("Winter", 45, color="r")
-plt.xlabel("Seasons")
-plt.ylabel("Occurrences")
-plt.title("Which season Asthma occurs the most")
-plt.show()
-print("\nPlease not asthma is also caused by some seasonal
-allergies and not only due to the weather")
-print("\nHome Remedies - Asthma - using air purifier at home,
-breathing exercises")
-
-elif chosen_illness == "Food Poisoning":
-numday9 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-percent9 = [2, 20, 38, 35, 5, 0, 0, 0, 0, 0]
-ax = plt.axes()
-ax.set_facecolor("black")
-plt.bar(numday9, percent9)
-plt.xlabel("Number of days symptoms lasted")
-plt.ylabel("Odds of complete relief")
-plt.title("Food Poisoning")
-plt.show()
-plt.bar("Spring", 23, color="y")
-plt.bar("Summer", 54, color="r")
-plt.bar("Monsoon", 17, color="r")
-plt.bar("Winter", 6, color="g")
-plt.xlabel("Seasons")
-plt.ylabel("Occurrences")
-plt.title("Which season Food Poisoning occurs the most")
-plt.show()
-print(
-"\nPlease not Food poisoning is caused by leaving food in
-temperatures between 40F to "
-"140F before eating the food, it can also be caused in the
-monsoon due to unhygienic conditions")
-print("\nHome Remedies - Food poisoning - ORS, electrolyte
-solutions")
-elif chosen_illness == "Sinusitis":
-print("Sinusitis can either be a acute or a chronic disease. "
-"\n If it is a chronic disease it is likely to go away within 10
-to 12 weeks. "
-"\n However, if it is a acute disease it is likely to get cured
-within a week to 10 days. ")
-print("\nSinusitis, occurs mainly in the season of allergies, "
-"which differs from person to person hence cannot be
-determined in which season it occurs the most")
-print("\nHome Remedies - Sinusitis - saline nasal rinse, steam
-inhalation")
-else:
-print("Due to some issues we couldn't predict illness. "
-"Please consult a healthcare professional for a proper
-diagnosis.")
-
-##MATPLOTLIB PRACTICE
-import matplotlib.pyplot as plt
-plt.plot([30,50,67]),([15,46,50])
-plt.title("MY GRAPH")
-plt.xlabel("X AXIS")
-plt.ylabel("Y AXIS")
-plt.show()
-plt.plot([1,2,3,4],[1,4,9,14])
-plt.title("MY GRAPH")
-plt.xlabel("X AXIS")
-plt.ylabel("Y AXIS")
-plt.show()
-
-plt.show()
+num=[int(input("Enter the number:")) for i in range(5)]
